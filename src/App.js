@@ -20,7 +20,8 @@ const App = () => {
             <Header loggedIn={loggedIn}/>
             <Content/>
             {/*Passing the state down the component tree via props*/}
-            <Footer loggedIn={loggedIn}/>
+            {/*Also passing the toggleLoggedIn function so the button is able to change the state*/}
+            <Footer loggedIn={loggedIn} toggleLoggedIn={toggleLoggedIn}/>
         </>
     );
 }
