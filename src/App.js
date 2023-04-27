@@ -14,7 +14,8 @@ const App = () => {
             {/*Passing the state down the component tree via props*/}
             <Header loggedIn={loggedIn}/>
             <Content/>
-            <Footer/>
+            {/*Passing the state down the component tree via props*/}
+            <Footer loggedIn={loggedIn}/>
         </>
     );
 }
