@@ -9,6 +9,11 @@ const App = () => {
     // Putting the shared state on the nearest common parent
     const [loggedIn, setLoggedIn] = useState(false)
 
+    const toggleLoggedIn = () => {
+        // Using !loggedIn to invert the boolean each time we call this function
+        setLoggedIn(!loggedIn)
+    }
+
     return (
         <>
             {/*Passing the state down the component tree via props*/}
