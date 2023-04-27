@@ -10,7 +10,7 @@ const App = () => {
 
     return (
         <>
-            <Header/>
+            <Header loggedIn={loggedIn}/>
             <Content/>
             <Footer/>
         </>
